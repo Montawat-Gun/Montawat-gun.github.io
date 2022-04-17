@@ -51,9 +51,15 @@ body {
 .custom-shape-divider-bottom-1650131315 svg {
     position: relative;
     display: block;
-    /* width: calc(132% + 1.3px); */
+    width: calc(132% + 1.3px);
     height: 184px;
     transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 600px) {
+    .custom-shape-divider-bottom-1650131315 svg {
+        width: 200%;
+    }
 }
 
 .custom-shape-divider-bottom-1650131315 .shape-fill {
@@ -86,7 +92,8 @@ body {
     transition: background 0.5s ease;
 }
 
-.container-overlay:hover .overlay {
+.container-overlay:hover .overlay,
+.container-overlay:active .overlay {
     display: block;
     background: rgba(0, 0, 0, 0.7);
 }
@@ -96,7 +103,8 @@ body {
     transition: opacity 0.35s ease;
 }
 
-.container-overlay:hover .overlay-content {
+.container-overlay:hover .overlay-content,
+.container-overlay:active .overlay-content {
     opacity: 1;
 }
 
@@ -104,7 +112,8 @@ body {
     transition: background-color 0.35s ease;
 }
 
-.social-icon:hover {
+.social-icon:hover,
+.social-icon:active {
     background-color: white;
 }
 
@@ -112,6 +121,7 @@ body {
     fill: white;
 }
 
-.social-icon:hover svg {
+.social-icon:hover svg,
+.social-icon:active svg {
     fill: #2464eb;
 }
