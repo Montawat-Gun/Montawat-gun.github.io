@@ -1,326 +1,468 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Montawat Sripaiboon | Software Developer</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/code.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="container">
+        <div class="logo">MS</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn">☰</button>
+      </div>
+    </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tailwind -->
-    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
-        integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <!-- Style -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap" rel="stylesheet">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container fade-in">
+        <div class="hero-content">
+          <h1>Montawat Sripaiboon</h1>
+          <p class="subtitle">Software Developer</p>
+          <p class="description">
+            Full-stack Software Developer with over 5 years of experience
+            building modern web and mobile applications. Proficient in React
+            native, Next.js, Angular, .NET, and Go, with strong experience in
+            designing RESTful APIs, database design, and cloud deployment.
+            Passionate about writing clean, maintainable code and delivering
+            high-quality solutions in Agile environments.
+          </p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <title>Montawat Sripaiboon</title>
-    <link rel="icon" type="image/x-icon" href="/assets/images/code.png">
-</head>
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">
+          Building scalable and efficient software solutions
+        </p>
+        <div style="max-width: 800px">
+          <p
+            style="
+              font-size: 1.1rem;
+              line-height: 1.8;
+              color: var(--text-secondary);
+            "
+          >
+            I'm a passionate software developer based in Bangkok, Thailand, with
+            approximately 5 years of professional experience. My expertise spans
+            across frontend technologies like Next.js and Angular, backend
+            systems using .NET and Go. I thrive on solving complex technical
+            challenges and building systems that scale, with a strong focus on
+            clean architecture, performance optimization, and user experience.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<body class="text-gray-800 noselect">
+    <!-- Experience Section -->
+    <section id="experience" style="background: var(--secondary)">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">
+          Building solutions across diverse industries
+        </p>
 
-    <div class="relative overflow-hidden">
-        <div class="w-full mx-auto mb-28">
-
-            <section class="bg-header">
-                <div class="bg-blur w-100 h-100 flex items-center justify-center h-screen">
-                    <div class="text-center">
-                        <img src="assets/images/Profile.JPG" class="rounded-full w-52 mx-auto mb-20" alt="">
-                        <h1 class="text-white text-2xl md:text-3xl lg:text-4xl text-center font-bold">
-                            <span class="text-blue-500">&lt;</span> MONTAWAT SRIPAIBOON / <span
-                                class="text-blue-500">&gt;</span>
-                        </h1>
-                        <span class="text-white">Software Developer | Fullstack Developer</span>
-                    </div>
-            </section>
-
-            <section class="flex justify-center px-2">
-                <div class="md:container py-20 flex flex-col w-full reveal">
-                    <h2 class="text-center p-10 text-4xl font-bold">Hello</h2>
-                    <div class="justify-center flex">
-                        <p class="p-2 text-lg lg:w-2/4 text-center">
-                            My name is montawat sripaiboon. I am a graduate of computer science with over 2 years of
-                            experience in developing web
-                            applications, mobile applications, backend systems, and databases in a software development
-                            company. Additionally, I have worked as a freelance developer and am currently studying for
-                            a master's degree in software engineering.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="flex justify-center px-2">
-                <div class="md:container py-20 flex flex-col w-full reveal">
-                    <h2 class="text-center p-10 text-4xl font-bold">Programming Skills</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 flex justify-center gap-3">
-                        <div class="w-full flex justify-center mb-5">
-                            <div class="justify-center rounded-lg overflow-hidden shadow-lg w-80">
-                                <div class="px-6 py-4">
-                                    <img src="assets/images/skills/programming-code-signs.png"
-                                        class="rounded-full w-16 mx-auto mt-5" alt="">
-                                    <div class="font-bold text-3xl text-gray-700 mb-10 mt-5 text-center">Frontend</div>
-                                    <div class="text-blue-500 text-xl text-center">
-                                        Frameworks
-                                    </div>
-                                    <ul class="text-gray-700 text-center mb-5">
-                                        <li>Angular</li>
-                                        <li>Ionic</li>
-                                        <li>Flutter</li>
-                                    </ul>
-                                    <div class="text-blue-500 text-xl text-center ">
-                                        Language
-                                    </div>
-                                    <ul class="text-gray-700 text-center">
-                                        <li>HTML</li>
-                                        <li>SCSS</li>
-                                        <li>CSS</li>
-                                        <li>Typescript</li>
-                                        <li>Dart</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full flex justify-center mb-5">
-                            <div class="justify-center max-w-sm rounded rounded-lg overflow-hidden shadow-lg w-80">
-                                <div class="px-6 py-4">
-                                    <img src="assets/images/skills/code.png" class="rounded-full w-16 mx-auto mt-5"
-                                        alt="">
-                                    <div class="font-bold text-3xl text-gray-700 mb-10 mt-5 text-center">Backend</div>
-                                    <div class="text-blue-500 text-xl text-center">
-                                        Frameworks
-                                    </div>
-                                    <ul class="text-gray-700 text-center mb-5">
-                                        <li>.NET </li>
-                                        <li>Nest JS</li>
-                                    </ul>
-                                    <div class="text-blue-500 text-xl text-center">
-                                        Language
-                                    </div>
-                                    <ul class="text-gray-700 text-center">
-                                        <li>C#</li>
-                                        <li>Typescript</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full flex justify-center mb-5">
-                            <div class="justify-center max-w-sm rounded rounded-lg overflow-hidden shadow-lg w-80">
-                                <div class="px-6 py-4">
-                                    <img src="assets/images/skills/cloud-data.png" class="w-16 mx-auto mt-5" alt="">
-                                    <div class="font-bold text-3xl text-gray-700 mb-10 mt-5 text-center">Database</div>
-                                    <div class="text-blue-500 text-xl text-center">
-                                        Tools
-                                    </div>
-                                    <ul class="text-gray-700 text-center mb-5">
-                                        <li>MS SQL Server</li>
-                                        <li>PostgreSQL</li>
-                                        <li>Oracle</li>
-                                    </ul>
-                                    <div class="text-blue-500 text-xl text-center">
-                                        Language
-                                    </div>
-                                    <ul class="text-gray-700 text-center">
-                                        <li>SQL</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full flex justify-center mb-5">
-                            <div class="justify-center max-w-sm rounded rounded-lg overflow-hidden shadow-lg w-80">
-                                <div class="px-6 py-4">
-                                    <img src="assets/images/skills/bracket.png" class="w-16 mx-auto mt-5" alt="">
-                                    <div class="font-bold text-3xl text-gray-700 mb-10 mt-5 text-center">Other</div>
-                                    <div class="text-blue-500 text-xl text-center">
-                                        Editor
-                                    </div>
-                                    <ul class="text-gray-700 text-center mb-5">
-                                        <li>Unity</li>
-                                    </ul>
-                                    <div class="text-blue-500 text-xl text-center">
-                                        Tools
-                                    </div>
-                                    <ul class="text-gray-700 text-center ">
-                                        <li>Git</li>
-                                        <li>Leaflet.js</li>
-                                        <li>Firebase</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="flex justify-center px-2">
-                <div class="md:container py-20 flex flex-col w-full reveal">
-                    <h2 class="text-center p-10 text-4xl font-bold">My Projects</h2>
-                    <h4 class="text-center">
-                        Here are a few projects I've worked on recently as a freelance and personal projects.
-                    </h4>
-                    <div class="justify-center flex mt-5">
-                        <div class="grid grid-cols-1 lg:grid-cols-3 flex justify-center gap-3">
-                            <div class="w-full mb-5">
-                                <div
-                                    class="container-overlay flex justify-center rounded-lg overflow-hidden shadow-lg w-80 h-full">
-                                    <div class="">
-                                        <img src="assets/images/projects/laforesta-site.png"
-                                            class="w-full mx-auto rounded-lg h-full" alt="">
-                                    </div>
-                                    <div class="overlay"></div>
-                                    <div class="overlay-content absolute">
-                                        <div class="flex flex-col mt-8">
-                                            <div class="text-white mb-5 ml-3">
-                                                Landing page for resort web site and room management for admin
-                                            </div>
-                                            <a href="https://laforestaresort.com" target="_blank"
-                                                class="flex justify-center w-3/4 mx-auto bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
-                                                Visit Website
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-full mb-5">
-                                <div
-                                    class="container-overlay flex justify-center rounded-lg overflow-hidden shadow-lg w-80 h-full">
-                                    <div class="">
-                                        <img src="assets/images/projects/bhl.png" class="w-full mx-auto rounded-lg h-full"
-                                            alt="">
-                                    </div>
-                                    <div class="overlay"></div>
-                                    <div class="overlay-content absolute">
-                                        <div class="flex flex-col mt-12">
-                                            <div class="text-white mb-3 mx-4">
-                                                Project dashbord for display water sensor data using .net 5 and angular.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-full mb-5">
-                                <div
-                                    class="container-overlay flex justify-center rounded-lg overflow-hidden shadow-lg w-80 h-full">
-                                    <div class="">
-                                        <img src="assets/images/projects/slimedashrush.png"
-                                            class="w-full mx-auto rounded-lg h-full" alt="">
-                                    </div>
-                                    <div class="overlay"></div>
-                                    <div class="overlay-content absolute">
-                                        <div class="flex flex-col mt-14">
-                                            <div class="text-white mb-5 mx-4">
-                                                Mobile game 2D make with unity.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-full mb-5">
-                                <div
-                                    class="container-overlay flex justify-center rounded-lg overflow-hidden shadow-lg w-80 h-full">
-                                    <div class="">
-                                        <img src="assets/images/projects/demo-hotel.png"
-                                            class="w-full mx-auto rounded-lg h-full" alt="">
-                                    </div>
-                                    <div class="overlay"></div>
-                                    <div class="overlay-content absolute">
-                                        <div class="flex flex-col mt-8">
-                                            <div class="text-white mb-5 mx-6">
-                                                Demo project using .net 6 and angular, primeng.
-                                            </div>
-                                            <a href="https://github.com/Montawat-Gun/Hotel-Booking" target="_blank"
-                                                class="flex justify-center w-3/4 mx-auto bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
-                                                Learn more
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-full h-full mb-5">
-                                <div
-                                    class="container-overlay flex justify-center rounded-lg overflow-hidden shadow-lg w-80">
-                                    <div class="">
-                                        <img src="assets/images/projects/reliefy.png"
-                                            class="w-full mx-auto rounded-lg h-full" alt="">
-                                    </div>
-                                    <div class="overlay"></div>
-                                    <div class="overlay-content absolute">
-                                        <div class="flex flex-col mt-8">
-                                            <div class="text-white mb-5 mx-6">
-                                                Term project in software design and development master's degree.
-                                            </div>
-                                            <a href="https://github.com/priesdelly/SW_Design_Reliefy" target="_blank"
-                                                class="flex justify-center w-3/4 mx-auto bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
-                                                Learn more
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="experience-item">
+          <h3>Senior Software Developer</h3>
+          <div class="experience-meta">
+            The Island Digital Solutions Co., Ltd. | January 2024 – Present
+          </div>
+          <p>
+            Leading development of innovative indoor navigation and mapping
+            solutions for large-scale buildings and shopping malls.
+          </p>
+          <ul>
+            <li>
+              Developed indoor navigation and mapping features with complex
+              floor structures, real-time positioning, and dynamic routing
+            </li>
+            <li>
+              Built Indoor Map CMS using Next.js, Leaflet + Geoman, .NET RESTful
+              APIs, and PostgreSQL + PostGIS
+            </li>
+            <li>
+              Designed system architecture using Clean Architecture and CQRS
+              patterns
+            </li>
+            <li>
+              Optimized performance and fixed memory leaks on iOS and Android
+              platforms
+            </li>
+            <li>
+              Mentored team members on coding standards, architecture patterns,
+              and best practices
+            </li>
+          </ul>
         </div>
 
-        <div class="custom-shape-divider-bottom-1650131315">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                    class="shape-fill"></path>
+        <div class="experience-item">
+          <h3>Software Developer</h3>
+          <div class="experience-meta">
+            Thai Beverage Public Company Limited | August 2023 – January 2024
+          </div>
+          <p>
+            Collaborated with Product Owner in an Agile Scrum environment to
+            deliver enterprise solutions.
+          </p>
+          <ul>
+            <li>
+              Developed Angular web applications with modern frontend practices
+            </li>
+            <li>
+              Designed and implemented RESTful APIs using Go (Gin Framework) and
+              Goqu
+            </li>
+            <li>
+              Managed SQL Server databases and optimized query performance
+            </li>
+            <li>Integrated Kafka for event-driven asynchronous processing</li>
+            <li>
+              Implemented comprehensive unit and integration tests using Mockery
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>Software Developer</h3>
+          <div class="experience-meta">
+            Bluebox Technology Co., Ltd. | April 2021 – July 2023
+          </div>
+          <p>
+            Delivered full-stack solutions including mobile applications and
+            backend systems.
+          </p>
+          <ul>
+            <li>
+              Developed location-based survey mobile application using Ionic,
+              Angular, and Leaflet
+            </li>
+            <li>
+              Built RESTful APIs using C# .NET with focus on scalability and
+              maintainability
+            </li>
+            <li>Managed databases with SQL Server and PostgreSQL</li>
+            <li>Created Jenkins CI/CD pipelines for automated deployment</li>
+            <li>
+              Successfully upgraded legacy Angular 2 applications to the latest
+              version
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>Freelance Developer</h3>
+          <div class="experience-meta">Various Clients | 2020 – Present</div>
+          <p>Delivering custom software solutions and consulting services.</p>
+          <ul>
+            <li>
+              Developed Thai quiz game using Unity for iOS and Android platforms
+            </li>
+            <li>
+              Built CMS for quiz content management with intuitive admin
+              interface
+            </li>
+            <li>
+              Designed file management and access control system for engineering
+              company
+            </li>
+            <li>Deployed and maintained systems on AWS and DigitalOcean</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic foundation in computer science</p>
+
+        <div class="education-item">
+          <h3>Bachelor of Science in Computer Science</h3>
+          <div class="education-meta">
+            Rajamangala University of Technology Phra Nakhon | 2017 – 2021
+          </div>
+          <p>
+            GPA: 3.67 (Second Class Honors) - Strong foundation in algorithms,
+            data structures, software engineering, and database systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background: var(--secondary)">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Technologies I work with</p>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">HTML/CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">.NET</span>
+              <span class="skill-tag">Go</span>
+              <span class="skill-tag">NestJS</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">Kafka</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Database & GIS</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">SQL Server</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">PostGIS</span>
+              <span class="skill-tag">Leaflet</span>
+              <span class="skill-tag">Mappedin</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>DevOps & Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Jenkins</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub/GitLab</span>
+              <span class="skill-tag">Unity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Recent work and personal projects</p>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              src="assets/images/projects/lbs/thumbnail.jpg"
+              alt="Indoor Map CMS"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3>Indoor Navigation System</h3>
+              <p>
+                Indoor navigation and mapping features with complex floor
+                structures, real-time positioning, and dynamic routing.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://apps.apple.com/th/app/one-bangkok/id6475669593"
+                  target="_blank"
+                  class="project-link"
+                  >View Details →</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="assets/images/projects/phoenthaivocab/thumbnail.jpg"
+              alt="Phoen Thai Vocab"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3>Phoen Thai Vocab</h3>
+              <p>
+                Vocabulary learning app for Thai language learners with
+                interactive quizzes. Built with Unity launched on iOS and
+                Android platforms, featuring a custom CMS for content
+                management.
+              </p>
+              <!-- <div class="project-links">
+                <a href="https://apps.apple.com/th/app/one-bangkok/id6475669593" target="_blank" class="project-link">View Details →</a>
+              </div> -->
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="assets/images/projects/huntwords/thumbnail.jpg"
+              alt="Hunt Words"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3>Hunt Words</h3>
+              <p>
+                Vocabulary learning app for Thai language learners with
+                interactive quizzes. Built with Unity launched on iOS and
+                Android platforms, featuring a custom CMS for content
+                management.
+              </p>
+              <!-- <div class="project-links">
+                <a href="https://apps.apple.com/th/app/one-bangkok/id6475669593" target="_blank" class="project-link">View Details →</a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="assets/images/projects/slimedashrush.png"
+              alt="Hobby Game"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3>Hobby Game</h3>
+              <p>Hobby project. A fun mobile game built with Unity</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="assets/images/projects/demo-hotel.png"
+              alt="Demo small project"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3>Demo small project</h3>
+              <p>
+                Demo small project. A simple hotel booking website built with
+                Angular primeng, .NET and SQL Server.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Montawat-Gun/Hotel-Booking"
+                  class="project-link"
+                  >View Details →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background: var(--secondary)">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's work together on your next project</p>
+
+        <div class="contact-links">
+          <a href="mailto:montawat.gun@gmail.com" class="contact-link">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
+            montawat.gun@gmail.com
+          </a>
+          <a
+            href="https://github.com/Montawat-Gun"
+            target="_blank"
+            class="contact-link"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/montawat-gun"
+            target="_blank"
+            class="contact-link"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
+            </svg>
+            LinkedIn
+          </a>
         </div>
-        <div class="relative inset-x-0 bottom-0 w-screen h-36 bg-blue-600">
-            <div class="flex justify-end mr-3">
-                <a href="mailto:montawat.gun@gmail.com" class="social-icon p-3 rounded-full border-2 border-white mr-3">
-                    <svg class="w-6 h-6" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512" data-fa-i2svg="">
-                        <path
-                            d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z">
-                        </path>
-                    </svg>
-                </a>
-                <a href="https://github.com/Montawat-Gun" target="_blank"
-                    class="social-icon p-3 rounded-full border-2 border-white mr-3">
-                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                        <path
-                            d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z" />
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/montawat-gun" target="_blank"
-                    class="social-icon p-3 rounded-full border-2 border-white mr-3">
-                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                    </svg>
-                </a>
-            </div>
-            <div class="flex justify-end mt-14 mr-6">
-                <span class="flex text-gray-100">
-                    <svg class="w-3 h-3 mt-1 mr-1" fill="#ffffff" version="1.1" id="Capa_1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 367.467 367.467" style="enable-background:new 0 0 367.467 367.467;"
-                        xml:space="preserve">
-                        <path d="M183.73,0.018C82.427,0.018,0,82.404,0,183.733c0,101.289,82.427,183.716,183.73,183.716
-                       c101.315,0,183.737-82.427,183.737-183.716C367.467,82.404,285.045,0.018,183.73,0.018z M183.73,326.518
-                       c-78.743,0-142.798-64.052-142.798-142.784c0-78.766,64.055-142.817,142.798-142.817c78.752,0,142.807,64.052,142.807,142.817
-                       C326.536,262.466,262.481,326.518,183.73,326.518z" />
-                        <path d="M244.036,217.014c-11.737,20.141-33.562,32.635-56.956,32.635c-36.329,0-65.921-29.585-65.921-65.915
-                       c0-36.36,29.592-65.955,65.921-65.955c23.395,0,45.219,12.54,56.956,32.641l1.517,2.627h44.28l-2.658-7.129
-                       c-7.705-20.413-21.225-37.769-39.122-50.157c-17.942-12.42-39.017-19.009-60.973-19.009c-58.981,0-106.946,48.006-106.946,106.982
-                       c0,58.98,47.965,106.941,106.946,106.941c21.956,0,43.03-6.567,60.973-19.006c17.897-12.391,31.417-29.741,39.122-50.154
-                       l2.658-7.133h-44.28L244.036,217.014z" />
-                    </svg>2022 Montawat Sripaiboon</span>
-            </div>
-        </div>
-    </div>
-</body>
+      </div>
+    </section>
 
-<script src="/behavior.js"></script>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Montawat Sripaibun. All rights reserved.</p>
+      </div>
+    </footer>
 
+    <script>
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+
+      // Add scroll animation
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll("section").forEach((section) => {
+        section.style.opacity = "0";
+        section.style.transform = "translateY(30px)";
+        section.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        observer.observe(section);
+      });
+    </script>
+  </body>
 </html>
