@@ -40,6 +40,7 @@ nav {
     top: 0;
     width: 100%;
     background: #faf5f0;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     z-index: 1000;
     /* border-bottom: 1px solid var(--border); */
@@ -388,6 +389,19 @@ footer {
 @media (max-width: 768px) {
     nav ul {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #faf5f0;
+        padding: 1rem 2rem;
+        gap: 1rem;
+        border-bottom: 1px solid var(--border);
+    }
+
+    nav ul.active {
+        display: flex;
     }
 
     .mobile-menu-btn {
